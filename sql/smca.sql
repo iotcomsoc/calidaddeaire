@@ -16,19 +16,42 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`smca` /*!40100 DEFAULT CHARACTER SET ut
 
 USE `smca`;
 
-/*Table structure for table `medicion` */
+/*Table structure for table `devices` */
 
-DROP TABLE IF EXISTS `medicion`;
+DROP TABLE IF EXISTS `devices`;
 
-CREATE TABLE `medicion` (
-  `MedicionId` bigint(20) NOT NULL AUTO_INCREMENT,
-  `SensorId` int(11) NOT NULL,
-  `Value` double DEFAULT NULL,
-  `Fecha` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`MedicionId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `devices` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `serie` varchar(255) DEFAULT NULL,
+  `ubicacion` int(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
-/*Data for the table `medicion` */
+/*Data for the table `devices` */
+
+insert  into `devices`(`id`,`name`,`serie`,`ubicacion`) values 
+(1,'Arduino UNO','125896',1),
+(2,'Arduino UNO','582369',2),
+(3,'Rasberry PI','586985',1),
+(4,'Rasberry PI ',NULL,2);
+
+/*Table structure for table `measures` */
+
+DROP TABLE IF EXISTS `measures`;
+
+CREATE TABLE `measures` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `sensor_id` int(11) NOT NULL,
+  `value` double DEFAULT NULL,
+  `fecha` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+/*Data for the table `measures` */
+
+insert  into `measures`(`id`,`sensor_id`,`value`,`fecha`) values 
+(1,1,3.5,'2018-07-23 22:25:48');
 
 /*Table structure for table `migrations` */
 
@@ -60,22 +83,25 @@ CREATE TABLE `password_resets` (
 
 /*Data for the table `password_resets` */
 
-/*Table structure for table `sensor` */
+/*Table structure for table `sensors` */
 
-DROP TABLE IF EXISTS `sensor`;
+DROP TABLE IF EXISTS `sensors`;
 
-CREATE TABLE `sensor` (
-  `SensorId` int(11) NOT NULL AUTO_INCREMENT,
-  `SensorName` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`SensorId`)
+CREATE TABLE `sensors` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `device_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_device_sensor` (`device_id`),
+  CONSTRAINT `fk_device_sensor` FOREIGN KEY (`device_id`) REFERENCES `devices` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
-/*Data for the table `sensor` */
+/*Data for the table `sensors` */
 
-insert  into `sensor`(`SensorId`,`SensorName`) values 
-(1,'Temperatura'),
-(2,'Humedad'),
-(3,'CO2');
+insert  into `sensors`(`id`,`name`,`device_id`) values 
+(1,'Temperatura',1),
+(2,'Humedad',1),
+(3,'CO2',1);
 
 /*Table structure for table `users` */
 

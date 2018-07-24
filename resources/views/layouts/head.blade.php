@@ -14,6 +14,9 @@
 
 	{!! Html::style('css/_all-skins.min.css') !!}
 
+	@section('styles')     
+    @show
+
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -32,6 +35,9 @@
 	{!! Html::script('js/icheck.min.js') !!}
 
 	{!! Html::script('js/app.min.js') !!}
+
+	@section('scripts')     
+    @show
 	
 	<script>
 	  $(function () {

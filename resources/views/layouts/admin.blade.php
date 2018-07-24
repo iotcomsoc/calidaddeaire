@@ -73,20 +73,21 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="usuario"><i class="fa fa-circle-o"></i> Usuarios</a></li>
-                
+                <li><a href="{{ URL::to('/usuario') }}"><i class="fa fa-circle-o"></i> Usuarios</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Calendario</a></li>
               </ul>
             </li>
 
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-laptop"></i>
-                <span>Dispositivos</span>
+                <span>Hardware</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="almacen/articulo"><i class="fa fa-circle-o"></i> Artículos</a></li>
-                <li><a href="almacen/categoria"><i class="fa fa-circle-o"></i> Categorías</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Ubicacion</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Dispositivos</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Sensores</a></li>
               </ul>
             </li>
             
@@ -97,8 +98,7 @@
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="compras/ingreso"><i class="fa fa-circle-o"></i> Ingresos</a></li>
-                <li><a href="compras/proveedor"><i class="fa fa-circle-o"></i> Proveedores</a></li>
+                <li><a href="{{ URL::to('/mediciones/rpt_temperatura') }}"><i class="fa fa-circle-o"></i> Reportes</a></li>li>
               </ul>
             </li>
                         
@@ -117,9 +117,6 @@
       </div>
       <strong>Copyright &copy; 2018-2020 <a href="http://peru.chapters.comsoc.org/">ComsocPERU</a>.</strong> All rights reserved.
     </footer> 
-
-    @section('scripts')     
-    @show
 
   </body>
 

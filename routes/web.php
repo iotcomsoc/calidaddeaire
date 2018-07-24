@@ -13,9 +13,10 @@
 
 Route::get('/','IndexController@index');
 
-Route::get('inicio','InicioController@index');
+Route::get('/inicio','InicioController@index');
 
 Route::resource('usuario','UserController');
 
-Route::get('usuarios','UserController@listar');
+Route::get('/usuarios','UserController@listar');
 
+Route::get('/mediciones/rpt_temperatura','MeasureController@rpt_temperatura');
