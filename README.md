@@ -5,7 +5,7 @@
 - Descargar el proyecto y descomprimir en un directorio C:/calidad de aire (puede ser cualquier ruta)
 - Ingresar al directorio anterior y levantar el servidor web
   C:\calidaddeaire>php artisan serve
-  <img src="public/image1.png">
+  <img src="public/img/tutorial/image1.png">
 - adsf
 - Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
 - Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
