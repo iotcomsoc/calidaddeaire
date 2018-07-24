@@ -1,4 +1,4 @@
-<p align="center">SISTEMA PARA CALIDAD DE AIRE</p>
+## SISTEMA PARA CALIDAD DE AIRE
 
 ## Pasos para instalar
 
