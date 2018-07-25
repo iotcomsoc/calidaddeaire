@@ -19,4 +19,4 @@
 - git clone <URL>
 - git add .
 - git commit -m "First commit"
-- git push origin master u
+- git push origin master uu
