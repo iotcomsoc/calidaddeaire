@@ -9,3 +9,14 @@
   <img src="public/img/image1.png">
 - Pegar en el navegador la siguiente url
   http://localhost:8000/inicio
+
+## Pasos para GITHUB
+
+- git config --global user.name "nombre"
+- git config --global user.email micorreo@gmail.com
+- git config --global color.ui true
+- git init
+- git clone <URL>
+- git add .
+- git commit -m "First commit"
+- git push origin master
