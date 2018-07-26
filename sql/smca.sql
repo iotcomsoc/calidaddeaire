@@ -125,22 +125,7 @@ CREATE TABLE `users` (
 /*Data for the table `users` */
 
 insert  into `users`(`id`,`name`,`last_name`,`email`,`login`,`password`,`remember_token`,`image`,`created_at`,`updated_at`) values 
-(1,'Martin',NULL,'mtrujillo@lnux','mtrujillo','123132',NULL,'foto1.jpg',NULL,NULL),
-(2,'Juan',NULL,'jtrujillo','jtrujillo','121232',NULL,'foto2.jpg',NULL,NULL),
-(3,'Hernán Martín',NULL,'martin.trujillo1105@gmail.com','ccjuantrujillo','123456',NULL,NULL,'2018-07-23 23:11:38','2018-07-23 23:11:38'),
-(5,'Hernán',NULL,'martin.trujillo1105@gmail.com2','otrujillo','123456',NULL,NULL,'2018-07-23 23:14:06','2018-07-23 23:14:06'),
-(6,'Hernán',NULL,'martin.trujillo1105@gmail.com6','cuturew','123456',NULL,NULL,'2018-07-23 23:16:16','2018-07-23 23:16:16'),
-(7,'Hernán',NULL,'martin.trujillo1105@gmail.com99','aterw','23423432',NULL,NULL,'2018-07-23 23:19:33','2018-07-23 23:19:33'),
-(8,'Pilar',NULL,'pilar@gmail.com','mtrew','123456',NULL,NULL,'2018-07-23 23:31:28','2018-07-23 23:31:28'),
-(9,'Pedro',NULL,'pedro.salinas@gmail.com','psalinas','1234596',NULL,NULL,'2018-07-23 23:53:03','2018-07-23 23:53:03'),
-(10,'maria',NULL,'maria.dolores@gmail.com','mdolores','4556666',NULL,NULL,'2018-07-24 01:04:37','2018-07-24 01:04:37'),
-(11,'Josefina','Sanchez Calderon','josefina.sanchez@gmail.com','jsanchez','123456',NULL,NULL,'2018-07-24 01:05:42','2018-07-24 01:05:42'),
-(12,'Romy','Durand Guevara','romy.durand@gmail.com','rdurand','123456',NULL,NULL,'2018-07-24 01:11:47','2018-07-24 01:11:47'),
-(13,'Haba','adf','adfs','ccjuantrujillo3','asdfsadfsdf',NULL,NULL,'2018-07-24 01:49:14','2018-07-24 01:49:14'),
-(14,'Jose','Salazar','jose.salazar@gmail.com','jsalazar','123456',NULL,NULL,'2018-07-24 02:08:25','2018-07-24 02:08:25'),
-(15,'Evelyn','Saavedra','evelyn@gmail.com','esaavedra','123456',NULL,NULL,'2018-07-24 02:10:00','2018-07-24 02:10:00'),
-(16,'maria','merceders','maria.mercedes@gmail.com','mmercedes','123456',NULL,NULL,'2018-07-24 02:11:52','2018-07-24 02:11:52'),
-(17,'Pepe','Ponce','pepe.ponce@gmail.com','pepe.ponce','312312312321',NULL,NULL,'2018-07-24 02:18:47','2018-07-24 02:18:47');
+(1,'Demo','1','demo@correo.com','mtrujillo','123456',NULL,'foto1.jpg',NULL,NULL);
 
 /* Procedure structure for procedure `deleteUser` */
 
