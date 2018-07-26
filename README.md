@@ -10,13 +10,27 @@
 - Pegar en el navegador la siguiente url
   http://localhost:8000/inicio
 
-## Pasos para GITHUB
+## Pasos para clonar un repositorio
 
-- git config --global user.name "nombre"
-- git config --global user.email micorreo@gmail.com
-- git config --global color.ui true
-- git init
-- git clone <URL>
-- git add .
-- git commit -m "First commit"
-- git push origin master uu
+- Configuramos git en el local
+  git config --global user.name "nombre"
+  git config --global user.email micorreo@gmail.com
+  git config --global color.ui true
+- Inicializamos git
+  git init
+- Clonamos el repositorio
+  git clone <URL>
+- Agregamos los archivos que se van a subir
+  git add .
+- Creamos commit
+  git commit -m "First commit"
+- Subir los cambios al servidor
+  git push origin master
+
+## Para un repositorio clonado
+
+- Actualizamos los archivos desde el servidor
+  git pull
+- Unimos si existen conflictos
+  git merge <branch>
+
