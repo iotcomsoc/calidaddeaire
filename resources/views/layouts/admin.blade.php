@@ -88,6 +88,7 @@
                 <li><a href="#"><i class="fa fa-circle-o"></i> Ubicacion</a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i> Dispositivos</a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i> Sensores</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Actuadores</a></li>
               </ul>
             </li>
             

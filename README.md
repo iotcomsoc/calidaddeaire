@@ -1,5 +1,16 @@
 ## SISTEMA PARA CALIDAD DE AIRE
 
+## Requisitos
+
+- PHP >= 7.1.3
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
+- Ctype PHP Extension
+- JSON PHP Extension
+
 ## Pasos para instalar
 
 - Descargar el proyecto y descomprimir en un directorio C:\calidad de aire (puede ser cualquier ruta)
@@ -33,4 +44,14 @@
   git pull
 - Unimos si existen conflictos
   git merge <branch>
-u
+
+## Screenshot
+
+- Pantalla de Login
+<img src="public/img/image2.png">
+- Pantalla de Inicio
+<img src="public/img/image3.png">
+- Pantalla de Usuarios
+<img src="public/img/image4.png">
+- Pantalla de Reportes
+<img src="public/img/image5.png">

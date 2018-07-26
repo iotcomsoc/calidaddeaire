@@ -83,10 +83,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        echo $id;
-        print_r($request->all());
         $usuario = User::find($id);
-
         $usuario->fill($request->all());
         $usuario->save();
         return response()->json([
