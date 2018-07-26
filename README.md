@@ -33,4 +33,4 @@
   git pull
 - Unimos si existen conflictos
   git merge <branch>
-
+u
