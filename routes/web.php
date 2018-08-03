@@ -23,6 +23,10 @@ Route::get('/usuarios','UserController@listar');
 
 Route::get('/mediciones/rpt_temperatura','MeasureController@rpt_temperatura');
 
+Route::get('/mediciones/rpt_temperatura_live','MeasureController@rpt_temperatura_live');
+
+Route::get('/mediciones/rpt_temperatura_serve','MeasureController@rpt_temperatura_serve');
+
 /*Route::group(array('before'=>'auth'),function(){
 	//Route::get('/',function(){
 		//return View::make('hello');

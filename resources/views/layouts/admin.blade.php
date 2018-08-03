@@ -99,7 +99,12 @@
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="{{ URL::to('/mediciones/rpt_temperatura') }}"><i class="fa fa-circle-o"></i> Reportes</a></li>li>
+                <li>
+                  <a href="{{ URL::to('/mediciones/rpt_temperatura') }}"><i class="fa fa-circle-o"></i> Reportes</a>
+                </li>
+                <li>
+                  <a href="{{ URL::to('/mediciones/rpt_temperatura_live') }}"><i class="fa fa-circle-o"></i> Reporte Live</a>
+                </li>
               </ul>
             </li>
                         
